@@ -32,8 +32,17 @@ namespace API.Controllers
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
             return await _context.Users.FindAsync(id);
-        }    
+        } 
 
-        
+        //q: list of git branches command?
+        //a: git branch -a
+
+        //q: how to switch to a branch?
+        //a: git checkout <branch name>
+
+
+   
+
+
     }
 }
