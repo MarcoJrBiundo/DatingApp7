@@ -32,15 +32,8 @@ namespace API.Controllers
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
             return await _context.Users.FindAsync(id);
-        }
+        }    
 
-        [HttpPost]
-        public async Task<ActionResult<AppUser>> PostUser(AppUser user)
-        {
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
-        }
+        
     }
 }
