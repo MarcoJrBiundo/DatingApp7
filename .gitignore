@@ -479,3 +479,7 @@ API/appsettings.json
 API/datingapp.db-shm
 .gitignore
 API/datingapp.db-wal
+*.pack
+client/.angular
+client/angular.json
+client/package-lock.json
